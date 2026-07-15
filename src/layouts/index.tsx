@@ -2,6 +2,8 @@ import React from 'react';
 import { Outlet, useLocation, useNavigate } from 'umi';
 import { ConfigProvider, App as AntApp } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
 import {
   HomeOutlined,
   LineChartOutlined,
@@ -10,6 +12,8 @@ import {
   SettingOutlined,
 } from '@ant-design/icons';
 import './index.less';
+
+dayjs.locale('zh-cn');
 
 const TABS = [
   { key: '/', label: '今日', icon: <HomeOutlined /> },

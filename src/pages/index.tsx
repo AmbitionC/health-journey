@@ -196,7 +196,14 @@ function TodayContent() {
 
       {/* 今日活动 */}
       <div className="hj-card">
-        <div className="hj-card-title">今日活动</div>
+        <div className="hj-card-title">
+          <span>今日活动</span>
+          {activity?.updatedAt && (
+            <span style={{ fontWeight: 400, fontSize: 12, color: '#a8b3ad' }}>
+              {dayjs(activity.updatedAt).format('HH:mm')} 更新
+            </span>
+          )}
+        </div>
         {activity ? (
           <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
             <div>
@@ -220,7 +227,7 @@ function TodayContent() {
           </div>
         ) : (
           <div className="hj-sub">
-            今日暂无同步数据 · 由 iOS 快捷指令每晚自动推送
+            今日暂无同步数据 · 手动跑一次快捷指令即可更新（白天可多次同步，覆盖式更新）
           </div>
         )}
       </div>

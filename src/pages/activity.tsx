@@ -94,7 +94,7 @@ function ActivityContent() {
           <Alert
             type="info"
             message="暂无活动数据"
-            description="配置 iOS 快捷指令后，Apple Watch 的步数、活动能量、锻炼与睡眠会每晚自动同步到这里（配置指南见 health 仓库 docs/ios-shortcut.md）。"
+            description="配置 iOS 快捷指令后，Apple Watch 的步数、活动能量、锻炼与睡眠会在白天多次自动同步到这里，同一天覆盖式更新（配置指南见 health 仓库 docs/ios-shortcut.md）。"
             showIcon
           />
         </div>

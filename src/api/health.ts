@@ -82,6 +82,7 @@ export interface ActivityRecord {
   sleepHours: number | null;
   weightKg: number | null;
   source: string;
+  updatedAt: string | null;
 }
 
 export interface HealthGoal {
